@@ -9,7 +9,18 @@ Recursively searches through the specified directory and subdirectories for the 
 Provides clear debugging output for tracking renaming operations.
 
 How It Works
-Input Parameters:
+1) Input Parameters:
 
 fileName: The name of the file you want to move (e.g., 02_pointer_example.cpp).
 position: The new position number for the file (e.g., 5 to move the file to position 5).
+
+2) Process:
+
+The script identifies the file in the specified directory and its subdirectories.
+Based on the current number and the target position, the script determines whether the file should be moved to a higher or lower position in the sequence.
+It renames other files in the sequence to accommodate the moved file and updates the target file's prefix to reflect the new position.
+
+3) Output:
+
+Files are renamed in the specified directory to maintain the updated sequence.
+Debugging messages provide detailed logs of the renaming operations.
